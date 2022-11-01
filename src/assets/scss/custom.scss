@@ -1,0 +1,39 @@
+// styles
+body {
+  background-color: $theme_bg;
+}
+// login form
+.login-form {
+  .card-title {
+    color: $primary_color;
+  }
+  .forgot-password {
+    a {
+      color: $primary_color;
+      text-decoration: none;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  .login-btn {
+    background-color: $primary_color;
+    border-color: $primary_color;
+    color: $white;
+    &:hover {
+      background-color: $primary_hover_color;
+      border-color: $primary_hover_color;
+      color: $white;
+    }
+  }
+  .register {
+    text-align: center;
+    a {
+      color: $primary_color;
+      text-decoration: none;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
