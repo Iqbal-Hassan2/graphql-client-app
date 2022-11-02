@@ -11,6 +11,8 @@ import { AppRoutes } from "./routes/Routes";
 import { NavigationScroll } from "./layouts/NavigationScroll";
 import { ThemeProvider } from "react-bootstrap";
 
+//
+import { UserProvider } from "./context/context";
 // ==============================|| APP ||============================== //
 
 export function App() {
@@ -20,7 +22,9 @@ export function App() {
         <ApolloProvider client={client}>
           <ThemeProvider>
             <NavigationScroll>
-              <AppRoutes />
+              <UserProvider>
+                <AppRoutes />
+              </UserProvider>
             </NavigationScroll>
           </ThemeProvider>
         </ApolloProvider>
